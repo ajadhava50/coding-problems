@@ -1,0 +1,7 @@
+
+U	java:S106""9Replace this use of System.out or System.err by a logger.(àÁ€Ë8¬¥é˜Š/
+L
+java:S2440"1Remove this instantiation of "ExpensiveResource".(ô«Ì÷ùÿÿÿÿ
+[
+java:S2168"9Remove this dangerous instance of double-checked locking.(‘ðÂƒøÿÿÿÿ8–û¼¼†/
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(àÃ÷â8¬¥é˜Š/

@@ -1,0 +1,5 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(…ò£—8½ÓÃ†/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‹²—›ıÿÿÿÿ8®¥é˜Š/
+{
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ï·õ‹ûÿÿÿÿ8®¥é˜Š/

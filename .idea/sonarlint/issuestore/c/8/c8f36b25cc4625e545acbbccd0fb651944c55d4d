@@ -1,0 +1,9 @@
+
+F
+java:S1874 "0Remove this use of "setMonth"; it is deprecated.(Ø‘ÃÏ
+I
+java:S1481#"'Remove this unused "m1" local variable.(åÔ¤Ñøÿÿÿÿ8Ùž±™Š/
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(»®«ˆüÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»®«ˆüÿÿÿÿ
+X
+java:S1854#"6Remove this useless assignment to local variable "m1".(åÔ¤Ñøÿÿÿÿ8Ùž±™Š/

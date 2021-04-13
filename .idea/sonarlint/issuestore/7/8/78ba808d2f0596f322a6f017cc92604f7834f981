@@ -1,0 +1,13 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(èÀÅ™
+H
+java:S1905"+Remove this unnecessary cast to "Callable".(¶Âİ°8İ»€Øƒ/
+M
+java:S1905"+Remove this unnecessary cast to "Callable".(î²éĞıÿÿÿÿ8¥ˆØƒ/
+Q
+java:S3740"/Provide the parametrized type for this generic.(î²éĞıÿÿÿÿ8ÀıÕ×ƒ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(»ØŸù8İ»€Øƒ/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(‚âş8¥ˆØƒ/
+L
+java:S3740"/Provide the parametrized type for this generic.(¶Âİ°8ÀıÕ×ƒ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ñ¶ìüÿÿÿÿ8˜ìèÖƒ/

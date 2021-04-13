@@ -1,0 +1,11 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(ìÇ•Îüÿÿÿÿ
+X
+java:S1854#"6Remove this useless assignment to local variable "m1".(ÜĞ¾ûøÿÿÿÿ8ïùÅ¾†/
+N
+java:S1612'",Replace this lambda with a method reference.(æ•¬üÿÿÿÿ8ÕÇÈ¾†/
+I
+java:S1481#"'Remove this unused "m1" local variable.(ÜĞ¾ûøÿÿÿÿ8ïùÅ¾†/
+O
+java:S2864"4Iterate over the "entrySet" instead of the "keySet".(Œ¸½§øÿÿÿÿ
