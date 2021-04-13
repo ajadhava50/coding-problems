@@ -1,18 +1,0 @@
-
-‰
-java:S1130 "lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(îÜ¥™8á†›†ø.
-Z
-java:S11974"8Move the array designator from the variable to the type.(žÍè¾üÿÿÿÿ8á†›†ø.
-V	java:S125"<This block of commented-out lines of code should be removed.(Ž«“Ôûÿÿÿÿ
-]	java:S125"<This block of commented-out lines of code should be removed.(ñ°úÿÿÿÿ8á†›†ø.
-I
-java:S1481("'Remove this unused "br" local variable.(ÈïŸÝüÿÿÿÿ8á†›†ø.
-X	java:S125+"<This block of commented-out lines of code should be removed.(Ø¡¸Ù8á†›†ø.
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ìÑ
-X
-java:S1854("6Remove this useless assignment to local variable "br".(ÈïŸÝüÿÿÿÿ8á†›†ø.
-t	java:S127C"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ8á†›†ø.
-t	java:S1278"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ì‚ˆÌ8á†›†ø.
-Z	java:S106G"9Replace this use of System.out or System.err by a logger.(Ú®Ò¶üÿÿÿÿ8á†›†ø.
-8
-java:S36269"Remove this redundant jump.(ÉŠ©ƒ8á†›†ø.
