@@ -7,14 +7,10 @@ public class InterviewPannel {
         TechnicalRound technicalRound = new TechnicalRound();
         ManagerRound managerRound = new ManagerRound();
         HRRound hrRound = new HRRound();
-        first=technicalRound;
+        first = technicalRound;
         technicalRound.setNext(managerRound);
         managerRound.setNext(hrRound);
 
-    }
-
-    private boolean hire(Candidate candidate) {
-        return first.hire(candidate);
     }
 
     public static void main(String[] args) {
@@ -25,5 +21,8 @@ public class InterviewPannel {
         System.out.println(pannel.hire(candidate1));
     }
 
+    private boolean hire(Candidate candidate) {
+        return first.hire(candidate);
+    }
 
 }

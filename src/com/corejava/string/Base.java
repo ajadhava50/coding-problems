@@ -12,10 +12,10 @@ class Dervied {
 }
 public class Base extends Dervied{
 
-
-    public void show(){
-        System.out.println("Derived  show");
-    }
+//
+//    public void show(){
+//        System.out.println("Derived  show");
+//    }
 
     public static void main(String[] args) {
         Dervied d = new Base();
@@ -24,7 +24,6 @@ public class Base extends Dervied{
         B b=new B();
         String  ab="as";
       List<String> list=new ArrayList<>();
-      list.forEach();
         System.out.println(b instanceof B);
         System.out.println((b instanceof B) && (!(b instanceof A)));
         System.out.println(b instanceof B && (!(b instanceof C)));
