@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
 
-public class Solution {
+public class  NumberOf1Bits {
     // you need to treat n as an unsigned value
     public static int hammingWeight(int n) {
 

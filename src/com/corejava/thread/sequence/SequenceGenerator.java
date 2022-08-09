@@ -6,9 +6,9 @@ public class SequenceGenerator {
 
     private int number = 1;
 
-    public SequenceGenerator(int count,int max_thread) {
+    public SequenceGenerator(int count, int max_thread) {
         this.max_sequence = count;
-        this.thread_no=max_thread;
+        this.thread_no = max_thread;
     }
 
     public void printNumber(int result) {

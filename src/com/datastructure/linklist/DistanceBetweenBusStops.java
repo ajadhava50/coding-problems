@@ -1,6 +1,6 @@
 package com.datastructure.linklist;
 
-public class Solution {
+public class DistanceBetweenBusStops {
     public static int distanceBetweenBusStops(int[] distance, int start, int destination) {
         int totalDistance = 0;
         int clockWiseDistance = 0;
