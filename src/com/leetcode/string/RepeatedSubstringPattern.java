@@ -3,7 +3,12 @@ package com.leetcode.string;
 //459. Repeated Substring Pattern
 class RepeatedSubstringPattern {
     public static void main(String[] args) {
-        repeatedSubstringPattern("abcabcabcabc");
+       // repeatedSubstringPattern("abcabcabcabc");
+        System.out.println(":::");
+        System.out.println("::sadas:");
+        System.out.println(":::");
+        System.out.println(":::");
+        System.out.println(0/3);
     }
 
     public static boolean repeatedSubstringPattern(String s) {
