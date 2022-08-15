@@ -17,8 +17,10 @@ class ScoreOfParentheses {
             } else {
                 score = stack.pop() + Math.max(score * 2, 1);
             }
+            System.out.println("stack\t\t"+stack + "\t \t score:" + score);
+
         }
-        System.out.println(score);
         return score;
     }
 }
+

@@ -14,7 +14,11 @@ public class SequenceGenerator {
     public void printNumber(int result) {
         synchronized (this) {
             while (number <= max_sequence) {
+                System.out.println("number:"+number +"\tthread_no::"+thread_no+"\tresult::"+result+"\tnumber % thread_no::"+number % thread_no);
                 while (number % thread_no != result) {
+                    System.out.println("INSIDE WHILE");
+                    System.out.println("number:"+number +"\tthread_no::"+thread_no+"\tresult::"+result+"\tnumber % thread_no::"+number % thread_no);
+                    System.out.println("INSIDE WHILE");
                     try {
                         wait();
                     } catch (InterruptedException e) {

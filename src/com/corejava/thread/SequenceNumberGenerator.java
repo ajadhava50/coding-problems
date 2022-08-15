@@ -1,7 +1,7 @@
 package com.corejava.thread;
 
 public class SequenceNumberGenerator {
-    private int number=1;
+    private int number = 1;
     private int threadNo;
     private int maxCount;
 
@@ -11,16 +11,16 @@ public class SequenceNumberGenerator {
     }
 
     public void printSequence(int result) {
-        synchronized (this){
-            while(number<maxCount){
-                while(number%threadNo!=result){
+        synchronized (this) {
+            while (number < maxCount) {
+                while (number % threadNo != result) {
                     try {
                         wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
-                System.out.println(Thread.currentThread().getName()+":"+number++);
+                System.out.println(Thread.currentThread().getName() + ":" + number++);
                 notifyAll();
             }
         }

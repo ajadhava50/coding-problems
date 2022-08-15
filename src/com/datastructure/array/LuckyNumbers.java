@@ -3,7 +3,7 @@ package com.datastructure.array;
 import java.util.ArrayList;
 import java.util.List;
 
-class Solution {
+class LuckyNumbers {
     public List<Integer> luckyNumbers(int[][] matrix) {
         List<Integer> result = new ArrayList<>();
         int row = matrix.length;

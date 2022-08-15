@@ -8,8 +8,9 @@ public class QuickSort {
         for (int aa : a) {
             System.out.print(aa + " -->");
         }
-        System.out.println();
-        quickSort(a, 0, a.length-1);
+
+        quickSort(a, 0, a.length - 1);
+        System.out.println("\n AFTER sort");
         for (int aa : a) {
             System.out.print(aa + " -->");
         }
@@ -18,30 +19,29 @@ public class QuickSort {
     private static void quickSort(int[] a, int start, int end) {
 
         if (start < end) {
-            int partionIndex = partion(a, start, end);
-            quickSort(a, start, partionIndex - 1);
-            quickSort(a, partionIndex + 1, end);
+            int pIndex = partition(a, start, end);
+            quickSort(a, start, pIndex - 1);
+            quickSort(a, pIndex + 1, end);
 
         }
 
     }
 
-    private static int partion(int[] a, int start, int end) {
+    private static int partition(int[] a, int start, int end) {
 
         int pivot = a[end];
-        int partionIndex = start-1;
+        int pIndex = start - 1;
         for (int i = start; i < end; i++) {
             if (a[i] <= pivot) {
-                int temp = partionIndex;
-                partionIndex = a[i];
+                int temp = pIndex;
+                pIndex = a[i];
                 a[i] = temp;
-                partionIndex++;
+                pIndex++;
             }
         }
-
-        int temp = a[partionIndex];
-        a[partionIndex] = a[end];
+        int temp = a[pIndex];
+        a[pIndex] = a[end];
         a[end] = temp;
-        return partionIndex+1;
+        return pIndex + 1;
     }
 }

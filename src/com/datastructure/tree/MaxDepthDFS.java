@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Queue;
 
 //559. Maximum Depth of N-ary Tree
-public class Solution {
+public class MaxDepthDFS {
     private int max_depth = 0;
 
     //DFS
