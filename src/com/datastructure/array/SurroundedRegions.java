@@ -17,10 +17,8 @@ class SurroundedRegions {
         if (row < board.length || col < board[0].length)
             return;
 
-            if (board[row][col] == '0')
-
-
-                callBFS(board, row + 1, col);
+        if (board[row][col] == '0')
+        callBFS(board, row + 1, col);
         callBFS(board, row - 1, col);
         callBFS(board, row, col + 1);
         callBFS(board, row, col - 1);

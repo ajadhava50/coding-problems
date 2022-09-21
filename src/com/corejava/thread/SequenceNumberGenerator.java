@@ -2,18 +2,18 @@ package com.corejava.thread;
 
 public class SequenceNumberGenerator {
     private int number = 1;
-    private int threadNo;
+    private int threadCount;
     private int maxCount;
 
-    public SequenceNumberGenerator(int threadNo, int maxCount) {
-        this.threadNo = threadNo;
+    public SequenceNumberGenerator(int threadCount, int maxCount) {
+        this.threadCount = threadCount;
         this.maxCount = maxCount;
     }
 
-    public void printSequence(int result) {
+    public void printSequence(int currentThreadNo) {
         synchronized (this) {
             while (number < maxCount) {
-                while (number % threadNo != result) {
+                while (number % threadCount != currentThreadNo) {
                     try {
                         wait();
                     } catch (InterruptedException e) {

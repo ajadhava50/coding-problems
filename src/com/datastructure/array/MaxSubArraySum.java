@@ -10,8 +10,7 @@ public class MaxSubArraySum {
             max_ending_here = max_ending_here + a[i];
             if (max_ending_here < 0) {
                 max_ending_here = 0;
-            }
-            else if (max_so_far < max_ending_here) {
+            } else if (max_so_far < max_ending_here) {
                 max_so_far = max_ending_here;
             }
         }
@@ -21,8 +20,9 @@ public class MaxSubArraySum {
     public static void main(String[] args) {
 
         int a[] = {-2, -3, 4, -1, -2, 1, 5, -3};
-        int n = a.length;
-        int max_sum = maxSubArraySum(a);
+        int b[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+      //  int max_sum = maxSubArraySum(a);
+        int max_sum = maxSubArraySum(b);
         System.out.println("Maximum contiguous sum is "
                 + max_sum);
     }
