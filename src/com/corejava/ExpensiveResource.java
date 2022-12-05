@@ -1,7 +1,7 @@
 package com.corejava;
 
 
-class ExpensiveResource {
+class ExpensiveResource  {
 
     private static ExpensiveResource instance;
     private static class MyResource{

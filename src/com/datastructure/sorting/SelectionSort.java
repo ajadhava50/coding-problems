@@ -7,9 +7,6 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         int aaa[] = {2, 7, 4, 3, 1, 6};
-        selectionSort(aaa);
-        System.out.println();
-        System.out.println();
         System.out.println("SELECTION SORT");
         int a[] = {2, 7, 4, 3, 1, 6};
 
@@ -18,26 +15,13 @@ public class SelectionSort {
         }
 
         System.out.println();
-        for (int i = 0; i < a.length - 1; i++) {
+        selectionSort(a);
 
-            int min = i;
-            for (int j = i + 1; j < a.length; j++) {
-                if (a[j] < a[min]) {
-                    min = j;
-                }
-            }
-            int temp = a[i];
-            a[i] = a[min];
-            a[min] = temp;
-        }
-        for (int aa : a) {
-            System.out.print(aa + " -->");
-        }
 
     }
 
-    private static void selectionSort(int[] a) {
 
+    private static void selectionSort(int[] a) {
         for (int i = 0; i < a.length - 1; i++) {
             int min = i;
             for (int j = i + 1; j < a.length; j++) {
@@ -54,4 +38,4 @@ public class SelectionSort {
         Arrays.stream(a).forEach(i -> System.out.print("\t" + i));
     }
 
-}
+    }

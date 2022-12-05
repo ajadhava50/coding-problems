@@ -19,7 +19,6 @@ class MergeIntervals {
         int[] current_interval = intervals[0];
         output_array.add(current_interval);
         for (int[] interval : intervals) {
-            int current_begin = current_interval[0];
             int current_end = current_interval[1];
             int next_begin = interval[0];
             int next_end = interval[1];
@@ -30,6 +29,16 @@ class MergeIntervals {
                 output_array.add(interval);
             }
         }
+        for (int i = 0; i < intervals.length; i++) {
+            if (intervals[i][1] >= intervals[i + 1][0]) {
+                intervals[i][1] = Math.max(intervals[i + 1][1], intervals[i][1]);
+                output_array.add(intervals[i]);
+                i++;
+            } else {
+                output_array.add(intervals[i]);
+            }
+        }
+
         return output_array.toArray(new int[output_array.size()][]);
     }
 }

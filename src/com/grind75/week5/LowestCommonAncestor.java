@@ -1,11 +1,11 @@
 package com.grind75.week5;
 
-class LowestCommonAncestor {
+public class LowestCommonAncestor {
 
     public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
+        public int val;
+      public TreeNode left;
+      public TreeNode right;
       TreeNode(int x) { val = x; }
   }
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

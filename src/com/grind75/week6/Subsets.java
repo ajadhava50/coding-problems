@@ -8,8 +8,8 @@ class Subsets {
 
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> subSets = new ArrayList<>();
-        generateSubsets(0, nums, new ArrayList<Integer>(), subSets);
-        generateSubsets1(0, nums, new ArrayList<Integer>(), subSets);
+        generateSubsets(0, nums, new ArrayList<>(), subSets);
+        generateSubsets1(0, nums, new ArrayList<>(), subSets);
         return subSets;
     }
     //1st approach

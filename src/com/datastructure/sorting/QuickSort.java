@@ -4,6 +4,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
 
+        //  int a[] = {2, 7, 4, 3, 1, 6};
         int a[] = {2, 7, 4, 3, 1, 6};
         for (int aa : a) {
             System.out.print(aa + " -->");
@@ -16,32 +17,32 @@ public class QuickSort {
         }
     }
 
-    private static void quickSort(int[] a, int start, int end) {
+     private static void quickSort(int[] a, int start, int end) {
+         if (start < end) {
+             int pIndex = partition(a, start, end);
+             quickSort(a, start, pIndex - 1);
+             quickSort(a, pIndex + 1, end);
+         }
+     }
 
-        if (start < end) {
-            int pIndex = partition(a, start, end);
-            quickSort(a, start, pIndex - 1);
-            quickSort(a, pIndex + 1, end);
-
-        }
-
-    }
-
-    private static int partition(int[] a, int start, int end) {
-
-        int pivot = a[end];
-        int pIndex = start - 1;
-        for (int i = start; i < end; i++) {
-            if (a[i] <= pivot) {
-                int temp = pIndex;
-                pIndex = a[i];
-                a[i] = temp;
-                pIndex++;
-            }
-        }
-        int temp = a[pIndex];
-        a[pIndex] = a[end];
-        a[end] = temp;
-        return pIndex + 1;
+     private static int partition(int[] a, int start, int end) {
+         int pivot = a[end];
+         int pIndex = start;
+         for (int i = start; i < end; i++) {
+             if (a[i] <= pivot) {
+                 if(pIndex != i)
+                     swap(a, pIndex, i);
+                 pIndex++;
+             }
+         }
+         if(pIndex != end)
+             swap(a, pIndex, end);
+         return pIndex;
+     }
+    public static void swap(int a[], int i, int j) {
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
     }
 }
+

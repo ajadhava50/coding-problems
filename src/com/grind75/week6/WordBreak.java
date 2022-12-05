@@ -14,7 +14,6 @@ class WordBreak {
         if (map.containsKey(s))
             return map.get(s);
         for (int i = 1; i <= s.length(); i++) {
-
             String left = s.substring(0, i);
             if (wordDict.contains(left) && wordBreak(s.substring(i), wordDict)) {
                 map.put(s, true);

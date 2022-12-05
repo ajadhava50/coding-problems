@@ -1,7 +1,11 @@
 package com.leetcode.medium;
 
+import java.util.stream.LongStream;
+
+//153. Find Minimum in Rotated Sorted Array
 class FindMinimum {
-    public int findMin(int[] nums) {
+
+    public static int findMin(int[] nums) {
         if (nums.length == 0) return -1;
         if (nums.length == 1) return nums[0];
 
@@ -19,5 +23,9 @@ class FindMinimum {
             }
         }
         return nums[left];
+    }
+
+    public static void main(String[] args) {
+        int num[] = {10, 9, 5, 1, 11};
     }
 }

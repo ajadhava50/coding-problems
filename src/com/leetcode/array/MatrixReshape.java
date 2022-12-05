@@ -4,14 +4,14 @@ package com.leetcode.array;
 class MatrixReshape {
     public int[][] matrixReshape(int[][] mat, int r, int c) {
         int rows = mat.length;
-        int colomns = mat[0].length;
+        int columns = mat[0].length;
 
-        if (rows * colomns != r * c) return mat;
+        if (rows * columns != r * c) return mat;
         int output_arr[][] = new int[r][c];
 
         int row_num = 0, col_num = 0;
         for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < colomns; j++) {
+            for (int j = 0; j < columns; j++) {
                 output_arr[row_num][col_num] = mat[i][j];
                 col_num++;
                 if (col_num == c) {

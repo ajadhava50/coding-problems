@@ -9,13 +9,13 @@ public class PowerSet {
 
     }
 
-    private static void printPowerSet(String s, int i, String currentString) {
+    private static void printPowerSet(String s, int index, String currentString) {
 
-        if (i == s.length()) {
+        if (index == s.length()) {
             System.out.println(currentString);
             return;
         }
-        printPowerSet(s, i + 1, currentString + s.charAt(i));
-        printPowerSet(s, i + 1, currentString);
+        printPowerSet(s, index + 1, currentString + s.charAt(index));
+        printPowerSet(s, index + 1, currentString);
     }
 }

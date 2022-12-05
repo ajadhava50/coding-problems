@@ -15,7 +15,7 @@ public class OddEvenGenerator {
     public void printEvenNumber() {
         synchronized (this) {
             while (number < max_sequence) {
-                while (number%2!=0) {
+                while (number % 2 != 0) {
                     try {
                         wait();
                     } catch (InterruptedException e) {
@@ -23,15 +23,16 @@ public class OddEvenGenerator {
                     }
                 }
                 System.out.println(Thread.currentThread().getName() + ":" + number++);
-  //              even_flag=false;
+                //              even_flag=false;
                 notify();
             }
         }
     }
+
     public void printOddNumber() {
         synchronized (this) {
             while (number < max_sequence) {
-                while (number%2==0) {
+                while (number % 2 == 0) {
                     try {
                         wait();
                     } catch (InterruptedException e) {
@@ -39,7 +40,7 @@ public class OddEvenGenerator {
                     }
                 }
                 System.out.println(Thread.currentThread().getName() + ":" + number++);
-               // even_flag=true;
+                // even_flag=true;
                 notify();
             }
         }
